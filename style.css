@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url("background.webp");
+    background-image: url("images/background.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,10 +100,28 @@ a:hover {
     margin: 10px auto 10px;
 }
 
+.sub.gallery {
+    display: grid;
+    grid-template: repeat(2, 1fr)  / repeat(3, 1fr);
+    text-align: center;
+    padding: 50px;
+}
+
+.gallery img {
+    width: 250px;
+    height: auto;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
 .register {
     width: 100%;
     margin: auto;
-    background-image: url("form-background.jpg");
+    background-image: url("images/form-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-weight: bold;
@@ -171,6 +189,7 @@ section p {
 
 .sub p {
     text-align: justify;
+    font-size: 18px;
 }
 
 .footer {
